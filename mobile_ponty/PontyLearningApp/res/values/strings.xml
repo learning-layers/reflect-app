@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ponty Learning App</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="login_info_text">Welcome to Pontydysgu Learning App. You can now login with your credentials:</string>
+    <string name="login_email_address">E-Mail address</string>
+    <string name="login_password">Your password</string>
+    <string name="login_register">Register now!</string>
+    <string name="login_login">Login</string>
+    <string name="title_activity_stackoverview">Stack overview</string>
+    <string name="stackoverview_description">Choose one of the following stacks:</string>
+    <string name="title_activity_question_cycle">Question cycle</string>
+
+</resources>

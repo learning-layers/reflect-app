@@ -1,0 +1,879 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="language" content="en" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/api.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<title>ExportController</title>
+</head>
+
+<body>
+<div id="apiPage">
+
+<div id="apiHeader">
+LearningApp Class Reference. <a href="http://www.yiiframework.com">Yii Framework</a>
+</div><!-- end of header -->
+
+<div id="content">
+<h1>ExportController</h1>
+<div id="nav">
+<a href="index.html">All Packages</a>
+| <a href="#properties">Properties</a>
+| <a href="#methods">Methods</a>
+</div>
+
+<table class="summaryTable docClass">
+<colgroup>
+	<col class="col-name" />
+	<col class="col-value" />
+</colgroup>
+<tr>
+  <th>Package</th>
+  <td><a href="index.html#application.controllers">application.controllers</a></td>
+</tr>
+<tr>
+  <th>Inheritance</th>
+  <td>class ExportController &raquo;
+<a href="Controller.html">Controller</a> &raquo;
+<a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a> &raquo;
+<a href="http://www.yiiframework.com/doc/api/1.1/CBaseController">CBaseController</a> &raquo;
+<a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr>
+  <th>Version</th>
+  <td>0.1</td>
+</tr>
+<tr>
+  <th>Source Code</th>
+  <td></td>
+</tr>
+</table>
+
+<div id="classDescription">
+This Class represents the ExportController</div>
+
+<a name="properties"></a>
+
+<div class="summary docProperty">
+<h2>Public Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-property" />
+	<col class="col-type" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="action">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#action-detail">action</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CAction">CAction</a></td>
+  <td>the action currently being executed, null if no active action.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="actionParams">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#actionParams-detail">actionParams</a></td>
+  <td>array</td>
+  <td>Returns the request parameters that will be used for action parameter binding.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="breadcrumbs">
+  <td><a href="Controller.html#breadcrumbs-detail">breadcrumbs</a></td>
+  <td>array</td>
+  <td>the breadcrumbs of the current page.</td>
+  <td><a href="Controller.html">Controller</a></td>
+</tr>
+<tr class="inherited" id="cachingStack">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#cachingStack-detail">cachingStack</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CStack">CStack</a></td>
+  <td>stack of COutputCache objects</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="clips">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#clips-detail">clips</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CMap">CMap</a></td>
+  <td>Returns the list of clips.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="defaultAction">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#defaultAction-detail">defaultAction</a></td>
+  <td>string</td>
+  <td>the name of the default action.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="id">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#id-detail">id</a></td>
+  <td>string</td>
+  <td>ID of the controller</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr id="layout">
+  <td><a href="ExportController.html#layout-detail">layout</a></td>
+  <td>string</td>
+  <td>the default layout for the views.</td>
+  <td>ExportController</td>
+</tr>
+<tr class="inherited" id="menu">
+  <td><a href="Controller.html#menu-detail">menu</a></td>
+  <td>array</td>
+  <td>context menu items.</td>
+  <td><a href="Controller.html">Controller</a></td>
+</tr>
+<tr class="inherited" id="module">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#module-detail">module</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CWebModule">CWebModule</a></td>
+  <td>the module that this controller belongs to.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="pageTitle">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#pageTitle-detail">pageTitle</a></td>
+  <td>string</td>
+  <td>the page title.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="route">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#route-detail">route</a></td>
+  <td>string</td>
+  <td>the route (module ID, controller ID and action ID) of the current request.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="uniqueId">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#uniqueId-detail">uniqueId</a></td>
+  <td>string</td>
+  <td>the controller ID that is prefixed with the module ID (if any).</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="user">
+  <td><a href="Controller.html#user-detail">user</a></td>
+  <td></td>
+  <td></td>
+  <td><a href="Controller.html">Controller</a></td>
+</tr>
+<tr class="inherited" id="viewPath">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#viewPath-detail">viewPath</a></td>
+  <td>string</td>
+  <td>Returns the directory containing view files for this controller.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+</table>
+</div>
+
+<a name="methods"></a>
+
+<div class="summary docMethod">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="__call">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#__call-detail">__call()</a></td>
+  <td>Calls the named method which is not a class method.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="__construct">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#__construct-detail">__construct()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="__get">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#__get-detail">__get()</a></td>
+  <td>Returns a property value, an event handler list or a behavior based on its name.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="__isset">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#__isset-detail">__isset()</a></td>
+  <td>Checks if a property value is null.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="__set">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#__set-detail">__set()</a></td>
+  <td>Sets value of a component property.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="__unset">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#__unset-detail">__unset()</a></td>
+  <td>Sets a component property to be null.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr id="accessRules">
+  <td><a href="ExportController.html#accessRules-detail">accessRules()</a></td>
+  <td>Specifies the access control rules.</td>
+  <td>ExportController</td>
+</tr>
+<tr id="actionExportMail">
+  <td><a href="ExportController.html#actionExportMail-detail">actionExportMail()</a></td>
+  <td>Export a selected Stack to a E-Mail and send it to user</td>
+  <td>ExportController</td>
+</tr>
+<tr id="actionExporttxt">
+  <td><a href="ExportController.html#actionExporttxt-detail">actionExporttxt()</a></td>
+  <td>Export a selected Stack to a textfile and send it to user</td>
+  <td>ExportController</td>
+</tr>
+<tr id="actionIndex">
+  <td><a href="ExportController.html#actionIndex-detail">actionIndex()</a></td>
+  <td>Shows the Indexpage of exporting the Stacks</td>
+  <td>ExportController</td>
+</tr>
+<tr class="inherited" id="actions">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#actions-detail">actions()</a></td>
+  <td>Returns a list of external action classes.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="asa">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#asa-detail">asa()</a></td>
+  <td>Returns the named behavior object.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="attachBehavior">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#attachBehavior-detail">attachBehavior()</a></td>
+  <td>Attaches a behavior to this component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="attachBehaviors">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#attachBehaviors-detail">attachBehaviors()</a></td>
+  <td>Attaches a list of behaviors to the component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="attachEventHandler">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#attachEventHandler-detail">attachEventHandler()</a></td>
+  <td>Attaches an event handler to an event.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="beginCache">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController/#beginCache-detail">beginCache()</a></td>
+  <td>Begins fragment caching.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController">CBaseController</a></td>
+</tr>
+<tr class="inherited" id="beginClip">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController/#beginClip-detail">beginClip()</a></td>
+  <td>Begins recording a clip.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController">CBaseController</a></td>
+</tr>
+<tr class="inherited" id="beginContent">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController/#beginContent-detail">beginContent()</a></td>
+  <td>Begins the rendering of content that is to be decorated by the specified view.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController">CBaseController</a></td>
+</tr>
+<tr class="inherited" id="beginWidget">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController/#beginWidget-detail">beginWidget()</a></td>
+  <td>Creates a widget and executes it.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController">CBaseController</a></td>
+</tr>
+<tr class="inherited" id="behaviors">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#behaviors-detail">behaviors()</a></td>
+  <td>Returns a list of behaviors that this controller should behave as.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="canGetProperty">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#canGetProperty-detail">canGetProperty()</a></td>
+  <td>Determines whether a property can be read.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="canSetProperty">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#canSetProperty-detail">canSetProperty()</a></td>
+  <td>Determines whether a property can be set.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="clearPageStates">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#clearPageStates-detail">clearPageStates()</a></td>
+  <td>Removes all page states.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="createAbsoluteUrl">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#createAbsoluteUrl-detail">createAbsoluteUrl()</a></td>
+  <td>Creates an absolute URL for the specified action defined in this controller.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="createAction">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#createAction-detail">createAction()</a></td>
+  <td>Creates the action instance based on the action name.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="createUrl">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#createUrl-detail">createUrl()</a></td>
+  <td>Creates a relative URL for the specified action defined in this controller.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="createWidget">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController/#createWidget-detail">createWidget()</a></td>
+  <td>Creates a widget and initializes it.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController">CBaseController</a></td>
+</tr>
+<tr class="inherited" id="detachBehavior">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#detachBehavior-detail">detachBehavior()</a></td>
+  <td>Detaches a behavior from the component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="detachBehaviors">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#detachBehaviors-detail">detachBehaviors()</a></td>
+  <td>Detaches all behaviors from the component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="detachEventHandler">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#detachEventHandler-detail">detachEventHandler()</a></td>
+  <td>Detaches an existing event handler.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="disableBehavior">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#disableBehavior-detail">disableBehavior()</a></td>
+  <td>Disables an attached behavior.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="disableBehaviors">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#disableBehaviors-detail">disableBehaviors()</a></td>
+  <td>Disables all behaviors attached to this component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="enableBehavior">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#enableBehavior-detail">enableBehavior()</a></td>
+  <td>Enables an attached behavior.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="enableBehaviors">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#enableBehaviors-detail">enableBehaviors()</a></td>
+  <td>Enables all behaviors attached to this component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="endCache">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController/#endCache-detail">endCache()</a></td>
+  <td>Ends fragment caching.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController">CBaseController</a></td>
+</tr>
+<tr class="inherited" id="endClip">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController/#endClip-detail">endClip()</a></td>
+  <td>Ends recording a clip.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController">CBaseController</a></td>
+</tr>
+<tr class="inherited" id="endContent">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController/#endContent-detail">endContent()</a></td>
+  <td>Ends the rendering of content.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController">CBaseController</a></td>
+</tr>
+<tr class="inherited" id="endWidget">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController/#endWidget-detail">endWidget()</a></td>
+  <td>Ends the execution of the named widget.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController">CBaseController</a></td>
+</tr>
+<tr class="inherited" id="evaluateExpression">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#evaluateExpression-detail">evaluateExpression()</a></td>
+  <td>Evaluates a PHP expression or callback under the context of this component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="filterAccessControl">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#filterAccessControl-detail">filterAccessControl()</a></td>
+  <td>The filter method for 'accessControl' filter.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="filterAjaxOnly">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#filterAjaxOnly-detail">filterAjaxOnly()</a></td>
+  <td>The filter method for 'ajaxOnly' filter.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="filterPostOnly">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#filterPostOnly-detail">filterPostOnly()</a></td>
+  <td>The filter method for 'postOnly' filter.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr id="filters">
+  <td><a href="ExportController.html#filters-detail">filters()</a></td>
+  <td></td>
+  <td>ExportController</td>
+</tr>
+<tr class="inherited" id="forward">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#forward-detail">forward()</a></td>
+  <td>Processes the request using another controller action.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="getAction">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#getAction-detail">getAction()</a></td>
+  <td>Returns the action currently being executed, null if no active action.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="getActionParams">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#getActionParams-detail">getActionParams()</a></td>
+  <td>Returns the request parameters that will be used for action parameter binding.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="getCachingStack">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#getCachingStack-detail">getCachingStack()</a></td>
+  <td>Returns stack of COutputCache objects</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="getClips">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#getClips-detail">getClips()</a></td>
+  <td>Returns the list of clips.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="getEventHandlers">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#getEventHandlers-detail">getEventHandlers()</a></td>
+  <td>Returns the list of attached event handlers for an event.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="getId">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#getId-detail">getId()</a></td>
+  <td>Returns ID of the controller</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="getLayoutFile">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#getLayoutFile-detail">getLayoutFile()</a></td>
+  <td>Looks for the layout view script based on the layout name.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="getModule">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#getModule-detail">getModule()</a></td>
+  <td>Returns the module that this controller belongs to. It returns null
+if the controller does not belong to any module</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="getPageState">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#getPageState-detail">getPageState()</a></td>
+  <td>Returns a persistent page state value.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="getPageTitle">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#getPageTitle-detail">getPageTitle()</a></td>
+  <td>Returns the page title. Defaults to the controller name and the action name.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="getRoute">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#getRoute-detail">getRoute()</a></td>
+  <td>Returns the route (module ID, controller ID and action ID) of the current request.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="getUniqueId">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#getUniqueId-detail">getUniqueId()</a></td>
+  <td>Returns the controller ID that is prefixed with the module ID (if any).</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="getViewFile">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#getViewFile-detail">getViewFile()</a></td>
+  <td>Looks for the view file according to the given view name.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="getViewPath">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#getViewPath-detail">getViewPath()</a></td>
+  <td>Returns the directory containing view files for this controller.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="hasEvent">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#hasEvent-detail">hasEvent()</a></td>
+  <td>Determines whether an event is defined.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="hasEventHandler">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#hasEventHandler-detail">hasEventHandler()</a></td>
+  <td>Checks whether the named event has attached handlers.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="hasProperty">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#hasProperty-detail">hasProperty()</a></td>
+  <td>Determines whether a property is defined.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="init">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#init-detail">init()</a></td>
+  <td>Initializes the controller.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="invalidActionParams">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#invalidActionParams-detail">invalidActionParams()</a></td>
+  <td>This method is invoked when the request parameters do not satisfy the requirement of the specified action.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="isCachingStackEmpty">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#isCachingStackEmpty-detail">isCachingStackEmpty()</a></td>
+  <td>Returns whether the caching stack is empty.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="missingAction">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#missingAction-detail">missingAction()</a></td>
+  <td>Handles the request whose action is not recognized.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="processDynamicOutput">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#processDynamicOutput-detail">processDynamicOutput()</a></td>
+  <td>Postprocesses the dynamic output.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="processOutput">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#processOutput-detail">processOutput()</a></td>
+  <td>Postprocesses the output generated by <a href="ExportController.html#render">render()</a>.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="raiseEvent">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#raiseEvent-detail">raiseEvent()</a></td>
+  <td>Raises an event.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="recordCachingAction">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#recordCachingAction-detail">recordCachingAction()</a></td>
+  <td>Records a method call when an output cache is in effect.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="redirect">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#redirect-detail">redirect()</a></td>
+  <td>Redirects the browser to the specified URL or route (controller/action).</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="refresh">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#refresh-detail">refresh()</a></td>
+  <td>Refreshes the current page.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="render">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#render-detail">render()</a></td>
+  <td>Renders a view with a layout.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="renderClip">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#renderClip-detail">renderClip()</a></td>
+  <td>Renders a named clip with the supplied parameters.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="renderDynamic">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#renderDynamic-detail">renderDynamic()</a></td>
+  <td>Renders dynamic content returned by the specified callback.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="renderDynamicInternal">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#renderDynamicInternal-detail">renderDynamicInternal()</a></td>
+  <td>This method is internally used.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="renderFile">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController/#renderFile-detail">renderFile()</a></td>
+  <td>Renders a view file.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController">CBaseController</a></td>
+</tr>
+<tr class="inherited" id="renderInternal">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController/#renderInternal-detail">renderInternal()</a></td>
+  <td>Renders a view file.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController">CBaseController</a></td>
+</tr>
+<tr class="inherited" id="renderPartial">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#renderPartial-detail">renderPartial()</a></td>
+  <td>Renders a view.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="renderText">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#renderText-detail">renderText()</a></td>
+  <td>Renders a static text string.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="resolveViewFile">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#resolveViewFile-detail">resolveViewFile()</a></td>
+  <td>Finds a view file based on its name.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="run">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#run-detail">run()</a></td>
+  <td>Runs the named action.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="runAction">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#runAction-detail">runAction()</a></td>
+  <td>Runs the action after passing through all filters.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="runActionWithFilters">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#runActionWithFilters-detail">runActionWithFilters()</a></td>
+  <td>Runs an action with the specified filters.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="setAction">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#setAction-detail">setAction()</a></td>
+  <td>Sets the action currently being executed.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="setPageState">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#setPageState-detail">setPageState()</a></td>
+  <td>Saves a persistent page state value.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="setPageTitle">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#setPageTitle-detail">setPageTitle()</a></td>
+  <td>Sets the page title.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="validateAjax">
+  <td><a href="Controller.html#validateAjax-detail">validateAjax()</a></td>
+  <td></td>
+  <td><a href="Controller.html">Controller</a></td>
+</tr>
+<tr class="inherited" id="widget">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController/#widget-detail">widget()</a></td>
+  <td>Creates a widget and executes it.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController">CBaseController</a></td>
+</tr>
+</table>
+</div>
+
+<div class="summary docMethod">
+<h2>Protected Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="afterAction">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#afterAction-detail">afterAction()</a></td>
+  <td>This method is invoked right after an action is executed.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="afterRender">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#afterRender-detail">afterRender()</a></td>
+  <td>This method is invoked after the specified is rendered by calling <a href="ExportController.html#render">render()</a>.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="beforeAction">
+  <td><a href="Controller.html#beforeAction-detail">beforeAction()</a></td>
+  <td></td>
+  <td><a href="Controller.html">Controller</a></td>
+</tr>
+<tr class="inherited" id="beforeRender">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#beforeRender-detail">beforeRender()</a></td>
+  <td>This method is invoked at the beginning of <a href="ExportController.html#render">render()</a>.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="createActionFromMap">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#createActionFromMap-detail">createActionFromMap()</a></td>
+  <td>Creates the action instance based on the action map.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="loadPageStates">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#loadPageStates-detail">loadPageStates()</a></td>
+  <td>Loads page states from a hidden input.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="replaceDynamicOutput">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#replaceDynamicOutput-detail">replaceDynamicOutput()</a></td>
+  <td>Replaces the dynamic content placeholders with actual content.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="savePageStates">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#savePageStates-detail">savePageStates()</a></td>
+  <td>Saves page states as a base64 string.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+</table>
+</div>
+
+<a name="events"></a>
+
+<h2>Property Details</h2>
+<div class="detailHeader" id="layout-detail">
+layout<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public string <b>$layout</b>;</div>
+
+<p>the default layout for the views. Defaults to '//layouts/column2', meaning
+using two-column layout. See 'protected/views/layouts/column2.php'.</p>
+
+
+<h2>Method Details</h2>
+
+<div class="detailHeader" id="accessRules-detail">
+accessRules()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public array <b>accessRules</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">access control rules</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b>  (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">accessRules</span><span style="color: #007700">()&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;array(<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;array(</span><span style="color: #DD0000">'allow'</span><span style="color: #007700">,&nbsp;</span><span style="color: #FF8000">//&nbsp;allow&nbsp;authenticated&nbsp;user&nbsp;to&nbsp;perform&nbsp;'create'&nbsp;and&nbsp;'update'&nbsp;actions<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'actions'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;array(</span><span style="color: #DD0000">'index'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'exporttxt'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'ExportMail'</span><span style="color: #007700">),<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'users'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;array(</span><span style="color: #DD0000">'@'</span><span style="color: #007700">),<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;),<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;array(</span><span style="color: #DD0000">'deny'</span><span style="color: #007700">,&nbsp;</span><span style="color: #FF8000">//&nbsp;deny&nbsp;all&nbsp;users<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'users'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;array(</span><span style="color: #DD0000">'*'</span><span style="color: #007700">),<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;),<br />&nbsp;&nbsp;&nbsp;&nbsp;);<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p>Specifies the access control rules.
+This method is used by the 'accessControl' filter.</p>
+
+
+<div class="detailHeader" id="actionExportMail-detail">
+actionExportMail()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>actionExportMail</b>(integer $stackID)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$stackID</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">StackID</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b>  (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">actionExportMail</span><span style="color: #007700">(</span><span style="color: #0000BB">$stackID</span><span style="color: #007700">)&nbsp;{<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$formModel&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">MailExportForm</span><span style="color: #007700">();<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">validateAjax</span><span style="color: #007700">(</span><span style="color: #0000BB">$formModel</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'mailnow'</span><span style="color: #007700">);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(isset(</span><span style="color: #0000BB">$_POST</span><span style="color: #007700">[</span><span style="color: #DD0000">'MailExportForm'</span><span style="color: #007700">]))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$formModel</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">attributes&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$_POST</span><span style="color: #007700">[</span><span style="color: #DD0000">'MailExportForm'</span><span style="color: #007700">];<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$formModel</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">validate</span><span style="color: #007700">())&nbsp;{<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">YiiMailMessage</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$message</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">view&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'ExportStack'</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$stack&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">user</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">findStackbyid</span><span style="color: #007700">(</span><span style="color: #0000BB">$stackID</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$stack&nbsp;</span><span style="color: #007700">==&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">redirect</span><span style="color: #007700">(array(</span><span style="color: #DD0000">'export/index'</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">''</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$stack</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">questions&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$question</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">'------------------------------------------------------------------------------------------'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">"\r\n"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">wordwrap</span><span style="color: #007700">(</span><span style="color: #0000BB">$question</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">90</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">"&lt;/br&gt;"</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">"\r\n"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">'------------------------------------------------------------------------------------------'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">"\r\n"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">"\r\n"</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$question</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">answers&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$answer</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">"Answer&nbsp;from&nbsp;"&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$answer</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">created&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">':'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">"\r\n"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">wordwrap</span><span style="color: #007700">(</span><span style="color: #0000BB">$answer</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">text</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">90</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">"\r\n"</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">"\r\n"</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">"\r\n"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">"\r\n"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">"\r\n"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">"\r\n"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$formModel</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">stack&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$content</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//userModel&nbsp;is&nbsp;passed&nbsp;to&nbsp;the&nbsp;view<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$formModel</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">body&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">str_replace</span><span style="color: #007700">(</span><span style="color: #DD0000">"\r\n"</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'&lt;/br&gt;'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$formModel</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">body</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$formModel</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">stack&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">str_replace</span><span style="color: #007700">(</span><span style="color: #DD0000">"\r\n"</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'&lt;/br&gt;'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$formModel</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">stack</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$message</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">setBody</span><span style="color: #007700">(array(</span><span style="color: #DD0000">'model'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$formModel</span><span style="color: #007700">),&nbsp;</span><span style="color: #DD0000">'text/html'</span><span style="color: #007700">);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$message</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">addTo</span><span style="color: #007700">(</span><span style="color: #0000BB">$formModel</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">email</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$message</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">setSubject</span><span style="color: #007700">(</span><span style="color: #0000BB">$formModel</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">subject</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$message</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">from&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">Yii</span><span style="color: #007700">::</span><span style="color: #0000BB">app</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">user</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getState</span><span style="color: #007700">(</span><span style="color: #DD0000">'email'</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">Yii</span><span style="color: #007700">::</span><span style="color: #0000BB">app</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">mail</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">send</span><span style="color: #007700">(</span><span style="color: #0000BB">$message</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">Yii</span><span style="color: #007700">::</span><span style="color: #0000BB">app</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">user</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">setFlash</span><span style="color: #007700">(</span><span style="color: #DD0000">'success'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'Thank&nbsp;you!&nbsp;E-Mail&nbsp;was&nbsp;sent!'</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">redirect</span><span style="color: #007700">(array(</span><span style="color: #DD0000">'export/index'</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">render</span><span style="color: #007700">(</span><span style="color: #DD0000">'ExportMail'</span><span style="color: #007700">,&nbsp;array(</span><span style="color: #DD0000">'model'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$formModel</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$stack&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">user</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">findStackbyid</span><span style="color: #007700">(</span><span style="color: #0000BB">$stackID</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$stack&nbsp;</span><span style="color: #007700">==&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">redirect</span><span style="color: #007700">(array(</span><span style="color: #DD0000">'export/index'</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">''</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$stack</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">questions&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$question</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">'------------------------------------------------------------------------------------------'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">"\r\n"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">wordwrap</span><span style="color: #007700">(</span><span style="color: #0000BB">$question</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">90</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">"&lt;/br&gt;"</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">"\r\n"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">'------------------------------------------------------------------------------------------'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">"\r\n"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">"\r\n"</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$question</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">answers&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$answer</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">"Answer&nbsp;from&nbsp;"&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$answer</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">created&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">':'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">"\r\n"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">wordwrap</span><span style="color: #007700">(</span><span style="color: #0000BB">$answer</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">text</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">90</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">"\r\n"</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">"\r\n"</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">"\r\n"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">"\r\n"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">"\r\n"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">"\r\n"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$formModel</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">stack&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$content</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">render</span><span style="color: #007700">(</span><span style="color: #DD0000">'ExportMail'</span><span style="color: #007700">,&nbsp;array(</span><span style="color: #DD0000">'model'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$formModel</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p>Export a selected Stack to a E-Mail and send it to user</p>
+
+
+<div class="detailHeader" id="actionExporttxt-detail">
+actionExporttxt()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>actionExporttxt</b>(integer $id)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$id</td>
+  <td class="paramTypeCol">integer</td>
+  <td class="paramDescCol">StackID</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b>  (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">actionExporttxt</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$stack&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">user</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">findStackbyid</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$stack&nbsp;</span><span style="color: #007700">==&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">redirect</span><span style="color: #007700">(array(</span><span style="color: #DD0000">'export/index'</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">''</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$stack</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">questions&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$question</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">'------------------------------------------------------------------------------------------'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">"\r\n"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">wordwrap</span><span style="color: #007700">(</span><span style="color: #0000BB">$question</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">90</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">"\r\n"</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">"\r\n"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">'------------------------------------------------------------------------------------------'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">"\r\n"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">"\r\n"</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$question</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">answers&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$answer</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">"Answer&nbsp;from&nbsp;"&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$answer</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">created&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">':'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">"\r\n"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">wordwrap</span><span style="color: #007700">(</span><span style="color: #0000BB">$answer</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">text</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">90</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">"\r\n"</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">"\r\n"</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">"\r\n"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">"\r\n"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">"\r\n"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">"\r\n"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$filename&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">str_replace</span><span style="color: #007700">(</span><span style="color: #DD0000">'&nbsp;'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'_'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$stack</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">name</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$filename&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">substr</span><span style="color: #007700">(</span><span style="color: #0000BB">$filename</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">8</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">'.txt'</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">Yii</span><span style="color: #007700">::</span><span style="color: #0000BB">app</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">getRequest</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">sendFile</span><span style="color: #007700">(</span><span style="color: #0000BB">$filename</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$content</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">"text/plain"</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p>Export a selected Stack to a textfile and send it to user</p>
+
+
+<div class="detailHeader" id="actionIndex-detail">
+actionIndex()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>actionIndex</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b>  (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">actionIndex</span><span style="color: #007700">()&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$stacks&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">Stack</span><span style="color: #007700">::</span><span style="color: #0000BB">model</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">findAll</span><span style="color: #007700">(</span><span style="color: #DD0000">'user_id=:user_id&nbsp;order&nbsp;by&nbsp;created&nbsp;desc'</span><span style="color: #007700">,&nbsp;array(</span><span style="color: #DD0000">':user_id'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">Yii</span><span style="color: #007700">::</span><span style="color: #0000BB">app</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">user</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">id</span><span style="color: #007700">));<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">render</span><span style="color: #007700">(</span><span style="color: #DD0000">'index'</span><span style="color: #007700">,&nbsp;array(<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'stacks'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$stacks</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;));<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p>Shows the Indexpage of exporting the Stacks</p>
+
+
+<div class="detailHeader" id="filters-detail">
+filters()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public array <b>filters</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">action filters</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b>  (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">filters</span><span style="color: #007700">()&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;array(<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'accessControl'</span><span style="color: #007700">,&nbsp;</span><span style="color: #FF8000">//&nbsp;perform&nbsp;access&nbsp;control&nbsp;for&nbsp;CRUD&nbsp;operations<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p></p>
+
+
+</div><!-- end of content -->
+
+<div id="apiFooter">
+Copyright &copy; 2008-2011 by <a href="http://www.yiisoft.com">Yii Software LLC</a><br/>
+All Rights Reserved.<br/>
+</div><!-- end of footer -->
+
+<script type="text/javascript">
+/*<![CDATA[*/
+$("a.toggle").toggle(function(){
+	$(this).text($(this).text().replace(/Hide/,'Show'));
+	$(this).parents(".summary").find(".inherited").hide();
+},function(){
+	$(this).text($(this).text().replace(/Show/,'Hide'));
+	$(this).parents(".summary").find(".inherited").show();
+});
+$(".sourceCode a.show").toggle(function(){
+	$(this).text($(this).text().replace(/show/,'hide'));
+	$(this).parents(".sourceCode").find("div.code").show();
+},function(){
+	$(this).text($(this).text().replace(/hide/,'show'));
+	$(this).parents(".sourceCode").find("div.code").hide();
+});
+$("a.sourceLink").click(function(){
+	$(this).attr('target','_blank');
+});
+/*]]>*/
+</script>
+
+</div><!-- end of page -->
+</body>
+</html>

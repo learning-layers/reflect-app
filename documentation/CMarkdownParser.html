@@ -1,0 +1,1246 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="language" content="en" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/api.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<title>CMarkdownParser</title>
+</head>
+
+<body>
+<div id="apiPage">
+
+<div id="apiHeader">
+<a href="http://www.yiiframework.com">Yii Framework</a> v1.1.13 Class Reference
+</div><!-- end of header -->
+
+<div id="content">
+<h1>CMarkdownParser</h1>
+<div id="nav">
+<a href="index.html">All Packages</a>
+| <a href="#properties">Properties</a>
+| <a href="#methods">Methods</a>
+</div>
+
+<table class="summaryTable docClass">
+<colgroup>
+	<col class="col-name" />
+	<col class="col-value" />
+</colgroup>
+<tr>
+  <th>Package</th>
+  <td><a href="index.html#system.utils">system.utils</a></td>
+</tr>
+<tr>
+  <th>Inheritance</th>
+  <td>class CMarkdownParser &raquo;
+<a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a> &raquo;
+<a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr>
+  <th>Since</th>
+  <td>1.0</td>
+</tr>
+<tr>
+  <th>Source Code</th>
+  <td><a class="sourceLink" href="https://github.com/yiisoft/yii/blob/1.1.13/framework/utils/CMarkdownParser.php">framework/utils/CMarkdownParser.php</a></td>
+</tr>
+</table>
+
+<div id="classDescription">
+CMarkdownParser is a wrapper of <a href="http://michelf.com/projects/php-markdown/extra/">MarkdownExtra_Parser</a>.
+<br/><br/>
+CMarkdownParser extends MarkdownExtra_Parser by using Text_Highlighter
+to highlight code blocks with specific language syntax.
+In particular, if a code block starts with the following:
+<pre>
+[language]
+</pre>
+The syntax for the specified language will be used to highlight
+code block. The languages supported include (case-insensitive):
+ABAP, CPP, CSS, DIFF, DTD, HTML, JAVA, JAVASCRIPT,
+MYSQL, PERL, PHP, PYTHON, RUBY, SQL, XML
+<br/><br/>
+You can also specify options to be passed to the syntax highlighter. For example:
+<pre>
+[php showLineNumbers=1]
+</pre>
+which will show line numbers in each line of the code block.
+<br/><br/>
+For details about the standard markdown syntax, please check the following:
+<ul>
+<li><a href="http://daringfireball.net/projects/markdown/syntax">official markdown syntax</a></li>
+<li><a href="http://michelf.com/projects/php-markdown/extra/">markdown extra syntax</a></li>
+</ul></div>
+
+<a name="properties"></a>
+
+<div class="summary docProperty">
+<h2>Public Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-property" />
+	<col class="col-type" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="abbr_desciptions">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#abbr_desciptions-detail">abbr_desciptions</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/"></a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr class="inherited" id="abbr_word_re">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#abbr_word_re-detail">abbr_word_re</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/"></a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr class="inherited" id="auto_close_tags_re">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#auto_close_tags_re-detail">auto_close_tags_re</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/"></a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr class="inherited" id="block_gamut">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#block_gamut-detail">block_gamut</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/"></a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="block_tags_re">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#block_tags_re-detail">block_tags_re</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/"></a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr class="inherited" id="clean_tags_re">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#clean_tags_re-detail">clean_tags_re</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/"></a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr class="inherited" id="contain_span_tags_re">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#contain_span_tags_re-detail">contain_span_tags_re</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/"></a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr class="inherited" id="context_block_tags_re">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#context_block_tags_re-detail">context_block_tags_re</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/"></a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr class="inherited" id="document_gamut">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#document_gamut-detail">document_gamut</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/"></a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="em_relist">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#em_relist-detail">em_relist</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/"></a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr class="inherited" id="em_strong_prepared_relist">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#em_strong_prepared_relist-detail">em_strong_prepared_relist</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/"></a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="em_strong_relist">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#em_strong_relist-detail">em_strong_relist</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/"></a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr class="inherited" id="empty_element_suffix">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#empty_element_suffix-detail">empty_element_suffix</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/"></a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="escape_chars">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#escape_chars-detail">escape_chars</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/"></a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="escape_chars_re">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#escape_chars_re-detail">escape_chars_re</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/"></a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="fn_backlink_class">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#fn_backlink_class-detail">fn_backlink_class</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/"></a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr class="inherited" id="fn_backlink_title">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#fn_backlink_title-detail">fn_backlink_title</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/"></a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr class="inherited" id="fn_id_prefix">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#fn_id_prefix-detail">fn_id_prefix</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/"></a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr class="inherited" id="fn_link_class">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#fn_link_class-detail">fn_link_class</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/"></a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr class="inherited" id="fn_link_title">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#fn_link_title-detail">fn_link_title</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/"></a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr class="inherited" id="footnote_counter">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#footnote_counter-detail">footnote_counter</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/"></a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr class="inherited" id="footnotes">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#footnotes-detail">footnotes</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/"></a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr class="inherited" id="footnotes_ordered">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#footnotes_ordered-detail">footnotes_ordered</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/"></a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr id="highlightCssClass">
+  <td><a href="CMarkdownParser.html#highlightCssClass-detail">highlightCssClass</a></td>
+  <td>string</td>
+  <td>the css class for the div element containing
+the code block that is highlighted.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CMarkdownParser">CMarkdownParser</a></td>
+</tr>
+<tr class="inherited" id="html_hashes">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#html_hashes-detail">html_hashes</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/"></a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="in_anchor">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#in_anchor-detail">in_anchor</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/"></a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="list_level">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#list_level-detail">list_level</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/"></a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="nested_brackets_depth">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#nested_brackets_depth-detail">nested_brackets_depth</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/"></a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="nested_brackets_re">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#nested_brackets_re-detail">nested_brackets_re</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/"></a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="nested_url_parenthesis_depth">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#nested_url_parenthesis_depth-detail">nested_url_parenthesis_depth</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/"></a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="nested_url_parenthesis_re">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#nested_url_parenthesis_re-detail">nested_url_parenthesis_re</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/"></a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="no_entities">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#no_entities-detail">no_entities</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/"></a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="no_markup">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#no_markup-detail">no_markup</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/"></a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="predef_abbr">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#predef_abbr-detail">predef_abbr</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/"></a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr class="inherited" id="predef_titles">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#predef_titles-detail">predef_titles</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/"></a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="predef_urls">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#predef_urls-detail">predef_urls</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/"></a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr id="purifierOptions">
+  <td><a href="CMarkdownParser.html#purifierOptions-detail">purifierOptions</a></td>
+  <td>mixed</td>
+  <td>the options to be passed to {@link http://htmlpurifier.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CMarkdownParser">CMarkdownParser</a></td>
+</tr>
+<tr class="inherited" id="span_gamut">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#span_gamut-detail">span_gamut</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/"></a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="strong_relist">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#strong_relist-detail">strong_relist</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/"></a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr class="inherited" id="tab_width">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#tab_width-detail">tab_width</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/"></a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="titles">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#titles-detail">titles</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/"></a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="urls">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#urls-detail">urls</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/"></a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="utf8_strlen">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#utf8_strlen-detail">utf8_strlen</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/"></a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+</table>
+</div>
+
+<a name="methods"></a>
+
+<div class="summary docMethod">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="__construct">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#__construct-detail">__construct()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr class="inherited" id="_appendFootnotes_callback">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#_appendFootnotes_callback-detail">_appendFootnotes_callback()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr class="inherited" id="_detab_callback">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#_detab_callback-detail">_detab_callback()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="_doAbbreviations_callback">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#_doAbbreviations_callback-detail">_doAbbreviations_callback()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr class="inherited" id="_doAnchors_inline_callback">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#_doAnchors_inline_callback-detail">_doAnchors_inline_callback()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="_doAnchors_reference_callback">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#_doAnchors_reference_callback-detail">_doAnchors_reference_callback()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="_doAutoLinks_email_callback">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#_doAutoLinks_email_callback-detail">_doAutoLinks_email_callback()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="_doAutoLinks_url_callback">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#_doAutoLinks_url_callback-detail">_doAutoLinks_url_callback()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="_doBlockQuotes_callback">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#_doBlockQuotes_callback-detail">_doBlockQuotes_callback()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="_doBlockQuotes_callback2">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#_doBlockQuotes_callback2-detail">_doBlockQuotes_callback2()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr id="_doCodeBlocks_callback">
+  <td><a href="CMarkdownParser.html#_doCodeBlocks_callback-detail">_doCodeBlocks_callback()</a></td>
+  <td>Callback function when a code block is matched.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CMarkdownParser">CMarkdownParser</a></td>
+</tr>
+<tr class="inherited" id="_doDefLists_callback">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#_doDefLists_callback-detail">_doDefLists_callback()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr id="_doFencedCodeBlocks_callback">
+  <td><a href="CMarkdownParser.html#_doFencedCodeBlocks_callback-detail">_doFencedCodeBlocks_callback()</a></td>
+  <td>Callback function when a fenced code block is matched.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CMarkdownParser">CMarkdownParser</a></td>
+</tr>
+<tr class="inherited" id="_doFencedCodeBlocks_newlines">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#_doFencedCodeBlocks_newlines-detail">_doFencedCodeBlocks_newlines()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr class="inherited" id="_doHardBreaks_callback">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#_doHardBreaks_callback-detail">_doHardBreaks_callback()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="_doHeaders_attr">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#_doHeaders_attr-detail">_doHeaders_attr()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr class="inherited" id="_doHeaders_callback_atx">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#_doHeaders_callback_atx-detail">_doHeaders_callback_atx()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr class="inherited" id="_doHeaders_callback_setext">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#_doHeaders_callback_setext-detail">_doHeaders_callback_setext()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr class="inherited" id="_doImages_inline_callback">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#_doImages_inline_callback-detail">_doImages_inline_callback()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="_doImages_reference_callback">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#_doImages_reference_callback-detail">_doImages_reference_callback()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="_doLists_callback">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#_doLists_callback-detail">_doLists_callback()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="_doTable_callback">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#_doTable_callback-detail">_doTable_callback()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr class="inherited" id="_doTable_leadingPipe_callback">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#_doTable_leadingPipe_callback-detail">_doTable_leadingPipe_callback()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr class="inherited" id="_hashHTMLBlocks_callback">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#_hashHTMLBlocks_callback-detail">_hashHTMLBlocks_callback()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="_hashHTMLBlocks_inHTML">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#_hashHTMLBlocks_inHTML-detail">_hashHTMLBlocks_inHTML()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr class="inherited" id="_hashHTMLBlocks_inMarkdown">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#_hashHTMLBlocks_inMarkdown-detail">_hashHTMLBlocks_inMarkdown()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr class="inherited" id="_initDetab">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#_initDetab-detail">_initDetab()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="_processDefListItems_callback_dd">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#_processDefListItems_callback_dd-detail">_processDefListItems_callback_dd()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr class="inherited" id="_processDefListItems_callback_dt">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#_processDefListItems_callback_dt-detail">_processDefListItems_callback_dt()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr class="inherited" id="_processListItems_callback">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#_processListItems_callback-detail">_processListItems_callback()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="_stripAbbreviations_callback">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#_stripAbbreviations_callback-detail">_stripAbbreviations_callback()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr class="inherited" id="_stripFootnotes_callback">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#_stripFootnotes_callback-detail">_stripFootnotes_callback()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr class="inherited" id="_stripLinkDefinitions_callback">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#_stripLinkDefinitions_callback-detail">_stripLinkDefinitions_callback()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="_unhash_callback">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#_unhash_callback-detail">_unhash_callback()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="appendFootnotes">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#appendFootnotes-detail">appendFootnotes()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr class="inherited" id="detab">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#detab-detail">detab()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="doAbbreviations">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#doAbbreviations-detail">doAbbreviations()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr class="inherited" id="doAnchors">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#doAnchors-detail">doAnchors()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="doAutoLinks">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#doAutoLinks-detail">doAutoLinks()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="doBlockQuotes">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#doBlockQuotes-detail">doBlockQuotes()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="doCodeBlocks">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#doCodeBlocks-detail">doCodeBlocks()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="doDefLists">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#doDefLists-detail">doDefLists()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr class="inherited" id="doFencedCodeBlocks">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#doFencedCodeBlocks-detail">doFencedCodeBlocks()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr class="inherited" id="doFootnotes">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#doFootnotes-detail">doFootnotes()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr class="inherited" id="doHardBreaks">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#doHardBreaks-detail">doHardBreaks()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="doHeaders">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#doHeaders-detail">doHeaders()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr class="inherited" id="doHorizontalRules">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#doHorizontalRules-detail">doHorizontalRules()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="doImages">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#doImages-detail">doImages()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="doItalicsAndBold">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#doItalicsAndBold-detail">doItalicsAndBold()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="doLists">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#doLists-detail">doLists()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="doTables">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#doTables-detail">doTables()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr class="inherited" id="encodeAmpsAndAngles">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#encodeAmpsAndAngles-detail">encodeAmpsAndAngles()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="encodeAttribute">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#encodeAttribute-detail">encodeAttribute()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="encodeEmailAddress">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#encodeEmailAddress-detail">encodeEmailAddress()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="formParagraphs">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#formParagraphs-detail">formParagraphs()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr id="getDefaultCssFile">
+  <td><a href="CMarkdownParser.html#getDefaultCssFile-detail">getDefaultCssFile()</a></td>
+  <td>Returns the default CSS file that is used to highlight code blocks.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CMarkdownParser">CMarkdownParser</a></td>
+</tr>
+<tr id="getHighlightConfig">
+  <td><a href="CMarkdownParser.html#getHighlightConfig-detail">getHighlightConfig()</a></td>
+  <td>Generates the config for the highlighter.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CMarkdownParser">CMarkdownParser</a></td>
+</tr>
+<tr id="getHiglightConfig">
+  <td><a href="CMarkdownParser.html#getHiglightConfig-detail">getHiglightConfig()</a></td>
+  <td>Generates the config for the highlighter.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CMarkdownParser">CMarkdownParser</a></td>
+</tr>
+<tr class="inherited" id="handleSpanToken">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#handleSpanToken-detail">handleSpanToken()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="hashBlock">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#hashBlock-detail">hashBlock()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="hashClean">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#hashClean-detail">hashClean()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr class="inherited" id="hashHTMLBlocks">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#hashHTMLBlocks-detail">hashHTMLBlocks()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr class="inherited" id="hashPart">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#hashPart-detail">hashPart()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="makeCodeSpan">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#makeCodeSpan-detail">makeCodeSpan()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="outdent">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#outdent-detail">outdent()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="parseSpan">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#parseSpan-detail">parseSpan()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="prepareItalicsAndBold">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#prepareItalicsAndBold-detail">prepareItalicsAndBold()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="processDefListItems">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#processDefListItems-detail">processDefListItems()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr class="inherited" id="processListItems">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#processListItems-detail">processListItems()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="runBasicBlockGamut">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#runBasicBlockGamut-detail">runBasicBlockGamut()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="runBlockGamut">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#runBlockGamut-detail">runBlockGamut()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="runSpanGamut">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#runSpanGamut-detail">runSpanGamut()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr id="safeTransform">
+  <td><a href="CMarkdownParser.html#safeTransform-detail">safeTransform()</a></td>
+  <td>Transforms the content and purifies the result.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CMarkdownParser">CMarkdownParser</a></td>
+</tr>
+<tr class="inherited" id="setup">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#setup-detail">setup()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr class="inherited" id="stripAbbreviations">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#stripAbbreviations-detail">stripAbbreviations()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr class="inherited" id="stripFootnotes">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#stripFootnotes-detail">stripFootnotes()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr class="inherited" id="stripLinkDefinitions">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#stripLinkDefinitions-detail">stripLinkDefinitions()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="teardown">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser/#teardown-detail">teardown()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/MarkdownExtra_Parser">MarkdownExtra_Parser</a></td>
+</tr>
+<tr class="inherited" id="transform">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#transform-detail">transform()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+<tr class="inherited" id="unhash">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser/#unhash-detail">unhash()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/Markdown_Parser">Markdown_Parser</a></td>
+</tr>
+</table>
+</div>
+
+<div class="summary docMethod">
+<h2>Protected Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr id="createHighLighter">
+  <td><a href="CMarkdownParser.html#createHighLighter-detail">createHighLighter()</a></td>
+  <td>Creates a highlighter instance.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CMarkdownParser">CMarkdownParser</a></td>
+</tr>
+<tr id="getHighlightTag">
+  <td><a href="CMarkdownParser.html#getHighlightTag-detail">getHighlightTag()</a></td>
+  <td>Returns the user-entered highlighting options.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CMarkdownParser">CMarkdownParser</a></td>
+</tr>
+<tr id="getInlineOption">
+  <td><a href="CMarkdownParser.html#getInlineOption-detail">getInlineOption()</a></td>
+  <td>Retrieves the specified configuration.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CMarkdownParser">CMarkdownParser</a></td>
+</tr>
+<tr id="highlightCodeBlock">
+  <td><a href="CMarkdownParser.html#highlightCodeBlock-detail">highlightCodeBlock()</a></td>
+  <td>Highlights the code block.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CMarkdownParser">CMarkdownParser</a></td>
+</tr>
+</table>
+</div>
+
+<a name="events"></a>
+
+<h2>Property Details</h2>
+<div class="detailHeader" id="highlightCssClass-detail">
+highlightCssClass<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public string <b>$highlightCssClass</b>;</div>
+
+<p>the css class for the div element containing
+the code block that is highlighted. Defaults to 'hl-code'.</p>
+
+
+<div class="detailHeader" id="purifierOptions-detail">
+purifierOptions<span class="detailHeaderTag">
+property
+ (available since v1.1.4)
+</span>
+</div>
+
+<div class="signature">
+public mixed <b>$purifierOptions</b>;</div>
+
+<p>the options to be passed to <a href="http://htmlpurifier.org">HTML Purifier</a>.
+This can be a HTMLPurifier_Config object,  an array of directives (Namespace.Directive => Value)
+or the filename of an ini file.
+This property is used only when <a href="CMarkdownParser.html#safeTransform">safeTransform</a> is invoked.</p>
+
+<div class="SeeAlso">
+<h4>See Also</h4>
+<ul>
+	<li><a href="http://htmlpurifier.org/live/configdoc/plain.html">http://htmlpurifier.org/live/configdoc/plain.html</a></li>
+</ul>
+</div>
+
+<h2>Method Details</h2>
+
+<div class="detailHeader" id="_doCodeBlocks_callback-detail">
+_doCodeBlocks_callback()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>_doCodeBlocks_callback</b>(array $matches)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$matches</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">matches</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the highlighted code block</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a class="sourceLink" href="https://github.com/yiisoft/yii/blob/1.1.13/framework/utils/CMarkdownParser.php#L97">framework/utils/CMarkdownParser.php#L97</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">_doCodeBlocks_callback</span><span style="color: #007700">(</span><span style="color: #0000BB">$matches</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$codeblock&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">outdent</span><span style="color: #007700">(</span><span style="color: #0000BB">$matches</span><span style="color: #007700">[</span><span style="color: #0000BB">1</span><span style="color: #007700">]);<br />&nbsp;&nbsp;&nbsp;&nbsp;if((</span><span style="color: #0000BB">$codeblock&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">highlightCodeBlock</span><span style="color: #007700">(</span><span style="color: #0000BB">$codeblock</span><span style="color: #007700">))&nbsp;!==&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #DD0000">"\n\n"</span><span style="color: #007700">.</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">hashBlock</span><span style="color: #007700">(</span><span style="color: #0000BB">$codeblock</span><span style="color: #007700">).</span><span style="color: #DD0000">"\n\n"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;else<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">parent</span><span style="color: #007700">::</span><span style="color: #0000BB">_doCodeBlocks_callback</span><span style="color: #007700">(</span><span style="color: #0000BB">$matches</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p>Callback function when a code block is matched.</p>
+
+
+<div class="detailHeader" id="_doFencedCodeBlocks_callback-detail">
+_doFencedCodeBlocks_callback()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>_doFencedCodeBlocks_callback</b>(array $matches)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$matches</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">matches</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the highlighted code block</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a class="sourceLink" href="https://github.com/yiisoft/yii/blob/1.1.13/framework/utils/CMarkdownParser.php#L111">framework/utils/CMarkdownParser.php#L111</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">_doFencedCodeBlocks_callback</span><span style="color: #007700">(</span><span style="color: #0000BB">$matches</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #DD0000">"\n\n"</span><span style="color: #007700">.</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">hashBlock</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">highlightCodeBlock</span><span style="color: #007700">(</span><span style="color: #0000BB">$matches</span><span style="color: #007700">[</span><span style="color: #0000BB">2</span><span style="color: #007700">])).</span><span style="color: #DD0000">"\n\n"</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p>Callback function when a fenced code block is matched.</p>
+
+
+<div class="detailHeader" id="createHighLighter-detail">
+createHighLighter()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected Text_Highlighter <b>createHighLighter</b>(string $options)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$options</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the user-entered options</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">Text_Highlighter</td>
+  <td class="paramDescCol">the highlighter instance</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a class="sourceLink" href="https://github.com/yiisoft/yii/blob/1.1.13/framework/utils/CMarkdownParser.php#L152">framework/utils/CMarkdownParser.php#L152</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">createHighLighter</span><span style="color: #007700">(</span><span style="color: #0000BB">$options</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if(!</span><span style="color: #0000BB">class_exists</span><span style="color: #007700">(</span><span style="color: #DD0000">'Text_Highlighter'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">))<br />&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;require_once(</span><span style="color: #0000BB">Yii</span><span style="color: #007700">::</span><span style="color: #0000BB">getPathOfAlias</span><span style="color: #007700">(</span><span style="color: #DD0000">'system.vendors.TextHighlighter.Text.Highlighter'</span><span style="color: #007700">).</span><span style="color: #DD0000">'.php'</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;require_once(</span><span style="color: #0000BB">Yii</span><span style="color: #007700">::</span><span style="color: #0000BB">getPathOfAlias</span><span style="color: #007700">(</span><span style="color: #DD0000">'system.vendors.TextHighlighter.Text.Highlighter.Renderer.Html'</span><span style="color: #007700">).</span><span style="color: #DD0000">'.php'</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$lang&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">current</span><span style="color: #007700">(</span><span style="color: #0000BB">preg_split</span><span style="color: #007700">(</span><span style="color: #DD0000">'/\s+/'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">substr</span><span style="color: #007700">(</span><span style="color: #0000BB">substr</span><span style="color: #007700">(</span><span style="color: #0000BB">$options</span><span style="color: #007700">,</span><span style="color: #0000BB">1</span><span style="color: #007700">),&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">,-</span><span style="color: #0000BB">1</span><span style="color: #007700">),</span><span style="color: #0000BB">2</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$highlighter&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">Text_Highlighter</span><span style="color: #007700">::</span><span style="color: #0000BB">factory</span><span style="color: #007700">(</span><span style="color: #0000BB">$lang</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;if(</span><span style="color: #0000BB">$highlighter</span><span style="color: #007700">)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$highlighter</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">setRenderer</span><span style="color: #007700">(new&nbsp;</span><span style="color: #0000BB">Text_Highlighter_Renderer_Html</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getHighlightConfig</span><span style="color: #007700">(</span><span style="color: #0000BB">$options</span><span style="color: #007700">)));<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$highlighter</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p>Creates a highlighter instance.</p>
+
+
+<div class="detailHeader" id="getDefaultCssFile-detail">
+getDefaultCssFile()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>getDefaultCssFile</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the default CSS file that is used to highlight code blocks.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a class="sourceLink" href="https://github.com/yiisoft/yii/blob/1.1.13/framework/utils/CMarkdownParser.php#L87">framework/utils/CMarkdownParser.php#L87</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getDefaultCssFile</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">Yii</span><span style="color: #007700">::</span><span style="color: #0000BB">getPathOfAlias</span><span style="color: #007700">(</span><span style="color: #DD0000">'system.vendors.TextHighlighter.highlight'</span><span style="color: #007700">).</span><span style="color: #DD0000">'.css'</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p></p>
+
+
+<div class="detailHeader" id="getHighlightConfig-detail">
+getHighlightConfig()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public array <b>getHighlightConfig</b>(string $options)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$options</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">user-entered options</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">the highlighter config</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a class="sourceLink" href="https://github.com/yiisoft/yii/blob/1.1.13/framework/utils/CMarkdownParser.php#L171">framework/utils/CMarkdownParser.php#L171</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getHighlightConfig</span><span style="color: #007700">(</span><span style="color: #0000BB">$options</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$config&nbsp;</span><span style="color: #007700">=&nbsp;array(</span><span style="color: #DD0000">'use_language'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">true</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;if(&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getInlineOption</span><span style="color: #007700">(</span><span style="color: #DD0000">'showLineNumbers'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$options</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">)&nbsp;)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$config</span><span style="color: #007700">[</span><span style="color: #DD0000">'numbers'</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">HL_NUMBERS_LI</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$config</span><span style="color: #007700">[</span><span style="color: #DD0000">'tabsize'</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getInlineOption</span><span style="color: #007700">(</span><span style="color: #DD0000">'tabSize'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$options</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">4</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$config</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p>Generates the config for the highlighter.</p>
+
+
+<div class="detailHeader" id="getHighlightTag-detail">
+getHighlightTag()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected string <b>getHighlightTag</b>(string $codeblock)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$codeblock</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">code block with highlighting options.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the user-entered highlighting options. Null if no option is entered.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a class="sourceLink" href="https://github.com/yiisoft/yii/blob/1.1.13/framework/utils/CMarkdownParser.php#L140">framework/utils/CMarkdownParser.php#L140</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">getHighlightTag</span><span style="color: #007700">(</span><span style="color: #0000BB">$codeblock</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$str&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">trim</span><span style="color: #007700">(</span><span style="color: #0000BB">current</span><span style="color: #007700">(</span><span style="color: #0000BB">preg_split</span><span style="color: #007700">(</span><span style="color: #DD0000">"/\r|\n/"</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$codeblock</span><span style="color: #007700">,</span><span style="color: #0000BB">2</span><span style="color: #007700">)));<br />&nbsp;&nbsp;&nbsp;&nbsp;if(</span><span style="color: #0000BB">strlen</span><span style="color: #007700">(</span><span style="color: #0000BB">$str</span><span style="color: #007700">)&nbsp;&gt;&nbsp;</span><span style="color: #0000BB">2&nbsp;</span><span style="color: #007700">&amp;&amp;&nbsp;</span><span style="color: #0000BB">$str</span><span style="color: #007700">[</span><span style="color: #0000BB">0</span><span style="color: #007700">]&nbsp;===&nbsp;</span><span style="color: #DD0000">'['&nbsp;</span><span style="color: #007700">&amp;&amp;&nbsp;</span><span style="color: #0000BB">$str</span><span style="color: #007700">[</span><span style="color: #0000BB">strlen</span><span style="color: #007700">(</span><span style="color: #0000BB">$str</span><span style="color: #007700">)-</span><span style="color: #0000BB">1</span><span style="color: #007700">]&nbsp;===&nbsp;</span><span style="color: #DD0000">']'</span><span style="color: #007700">)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$str</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p>Returns the user-entered highlighting options.</p>
+
+
+<div class="detailHeader" id="getHiglightConfig-detail">
+getHiglightConfig()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public array <b>getHiglightConfig</b>(string $options)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$options</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">user-entered options</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">the highlighter config</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a class="sourceLink" href="https://github.com/yiisoft/yii/blob/1.1.13/framework/utils/CMarkdownParser.php#L189">framework/utils/CMarkdownParser.php#L189</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getHiglightConfig</span><span style="color: #007700">(</span><span style="color: #0000BB">$options</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getHighlightConfig</span><span style="color: #007700">(</span><span style="color: #0000BB">$options</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p>Generates the config for the highlighter.
+<br/><br/>
+NOTE: This method is deprecated due to a mistake in the method name.
+Use <a href="CMarkdownParser.html#getHighlightConfig">getHighlightConfig</a> instead of this.</p>
+
+
+<div class="detailHeader" id="getInlineOption-detail">
+getInlineOption()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected mixed <b>getInlineOption</b>(string $name, string $str, mixed $defaultValue)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the configuration name</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$str</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the user-entered options</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$defaultValue</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol">default value if the configuration is not present</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol">the configuration value</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a class="sourceLink" href="https://github.com/yiisoft/yii/blob/1.1.13/framework/utils/CMarkdownParser.php#L201">framework/utils/CMarkdownParser.php#L201</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">getInlineOption</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$str</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$defaultValue</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if(</span><span style="color: #0000BB">preg_match</span><span style="color: #007700">(</span><span style="color: #DD0000">'/'</span><span style="color: #007700">.</span><span style="color: #0000BB">$name</span><span style="color: #007700">.</span><span style="color: #DD0000">'(\s*=\s*(\d+))?/i'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$str</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$v</span><span style="color: #007700">)&nbsp;&amp;&amp;&nbsp;</span><span style="color: #0000BB">count</span><span style="color: #007700">(</span><span style="color: #0000BB">$v</span><span style="color: #007700">)&nbsp;&gt;&nbsp;</span><span style="color: #0000BB">2</span><span style="color: #007700">)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$v</span><span style="color: #007700">[</span><span style="color: #0000BB">2</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;else<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$defaultValue</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p>Retrieves the specified configuration.</p>
+
+
+<div class="detailHeader" id="highlightCodeBlock-detail">
+highlightCodeBlock()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected string <b>highlightCodeBlock</b>(string $codeblock)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$codeblock</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the code block</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the highlighted code block. Null if the code block does not need to highlighted</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a class="sourceLink" href="https://github.com/yiisoft/yii/blob/1.1.13/framework/utils/CMarkdownParser.php#L121">framework/utils/CMarkdownParser.php#L121</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">highlightCodeBlock</span><span style="color: #007700">(</span><span style="color: #0000BB">$codeblock</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if((</span><span style="color: #0000BB">$tag</span><span style="color: #007700">=</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getHighlightTag</span><span style="color: #007700">(</span><span style="color: #0000BB">$codeblock</span><span style="color: #007700">))!==</span><span style="color: #0000BB">null&nbsp;</span><span style="color: #007700">&amp;&amp;&nbsp;(</span><span style="color: #0000BB">$highlighter</span><span style="color: #007700">=</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createHighLighter</span><span style="color: #007700">(</span><span style="color: #0000BB">$tag</span><span style="color: #007700">)))<br />&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$codeblock&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">preg_replace</span><span style="color: #007700">(</span><span style="color: #DD0000">'/\A\n+|\n+\z/'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">''</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$codeblock</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$tagLen&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">strpos</span><span style="color: #007700">(</span><span style="color: #0000BB">$codeblock</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$tag</span><span style="color: #007700">)+</span><span style="color: #0000BB">strlen</span><span style="color: #007700">(</span><span style="color: #0000BB">$tag</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$codeblock&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">ltrim</span><span style="color: #007700">(</span><span style="color: #0000BB">substr</span><span style="color: #007700">(</span><span style="color: #0000BB">$codeblock</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$tagLen</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$output</span><span style="color: #007700">=</span><span style="color: #0000BB">preg_replace</span><span style="color: #007700">(</span><span style="color: #DD0000">'/&lt;span\s+[^&gt;]*&gt;(\s*)&lt;\/span&gt;/'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'\1'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$highlighter</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">highlight</span><span style="color: #007700">(</span><span style="color: #0000BB">$codeblock</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #DD0000">"&lt;div&nbsp;class=\"</span><span style="color: #007700">{</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">highlightCssClass</span><span style="color: #007700">}</span><span style="color: #DD0000">\"&gt;"</span><span style="color: #007700">.</span><span style="color: #0000BB">$output</span><span style="color: #007700">.</span><span style="color: #DD0000">"&lt;/div&gt;"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;else<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #DD0000">"&lt;pre&gt;"</span><span style="color: #007700">.</span><span style="color: #0000BB">CHtml</span><span style="color: #007700">::</span><span style="color: #0000BB">encode</span><span style="color: #007700">(</span><span style="color: #0000BB">$codeblock</span><span style="color: #007700">).</span><span style="color: #DD0000">"&lt;/pre&gt;"</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p>Highlights the code block.</p>
+
+
+<div class="detailHeader" id="safeTransform-detail">
+safeTransform()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>safeTransform</b>(string $content)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$content</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the markdown content</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the purified HTML content</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> <a class="sourceLink" href="https://github.com/yiisoft/yii/blob/1.1.13/framework/utils/CMarkdownParser.php#L76">framework/utils/CMarkdownParser.php#L76</a> (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">safeTransform</span><span style="color: #007700">(</span><span style="color: #0000BB">$content</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$content</span><span style="color: #007700">=</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">transform</span><span style="color: #007700">(</span><span style="color: #0000BB">$content</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$purifier</span><span style="color: #007700">=new&nbsp;</span><span style="color: #0000BB">HTMLPurifier</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">purifierOptions</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$purifier</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">config</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">set</span><span style="color: #007700">(</span><span style="color: #DD0000">'Cache.SerializerPath'</span><span style="color: #007700">,</span><span style="color: #0000BB">Yii</span><span style="color: #007700">::</span><span style="color: #0000BB">app</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">getRuntimePath</span><span style="color: #007700">());<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$purifier</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">purify</span><span style="color: #007700">(</span><span style="color: #0000BB">$content</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p>Transforms the content and purifies the result.
+This method calls the transform() method to convert
+markdown content into HTML content. It then
+uses <a href="CHtmlPurifier.html">CHtmlPurifier</a> to purify the HTML content
+to avoid XSS attacks.</p>
+
+
+</div><!-- end of content -->
+
+<div id="apiFooter">
+Copyright &copy; 2008-2011 by <a href="http://www.yiisoft.com">Yii Software LLC</a><br/>
+All Rights Reserved.<br/>
+</div><!-- end of footer -->
+
+<script type="text/javascript">
+/*<![CDATA[*/
+$("a.toggle").toggle(function(){
+	$(this).text($(this).text().replace(/Hide/,'Show'));
+	$(this).parents(".summary").find(".inherited").hide();
+},function(){
+	$(this).text($(this).text().replace(/Show/,'Hide'));
+	$(this).parents(".summary").find(".inherited").show();
+});
+$(".sourceCode a.show").toggle(function(){
+	$(this).text($(this).text().replace(/show/,'hide'));
+	$(this).parents(".sourceCode").find("div.code").show();
+},function(){
+	$(this).text($(this).text().replace(/hide/,'show'));
+	$(this).parents(".sourceCode").find("div.code").hide();
+});
+$("a.sourceLink").click(function(){
+	$(this).attr('target','_blank');
+});
+/*]]>*/
+</script>
+
+</div><!-- end of page -->
+</body>
+</html>
